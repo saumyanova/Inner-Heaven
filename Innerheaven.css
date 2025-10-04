@@ -1,0 +1,254 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f4f8;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: RGB(0, 77, 78);
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.navbar .nav-links li a:hover {
+  color: #ffdd57;
+}
+.navbar .btn-register {
+  background: white;
+  color: RGB(0, 77, 78);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.navbar .btn-register:hover {
+  background: #ffdd57;
+  color: black;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #eaf3fc;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+header .banner {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+
+.chat-section {
+  text-align: center;
+  padding: 30px;
+}
+.chat-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+#chat-box {
+  height: 250px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#user-input {
+  width: 70%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+button {
+  background: RGB(0, 77, 78);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover {
+  background: RGB(0, 77, 78);
+}
+
+
+.user-msg {
+  background: #d4f8c4;
+  align-self: flex-end;
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 75%;
+}
+.bot-msg {
+  background: #ececec;
+  align-self: flex-start;
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 75%;
+}
+
+.features {
+  text-align: center;
+  padding: 40px 20px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+.center-cards {
+  justify-content: center;
+}
+
+.exercises {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.exercises .cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.exercises .card {
+  position: relative;
+  color: white; 
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.exercises .card h3, 
+.exercises .card button {
+  position: relative;
+  z-index: 2;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+
+.exercises .card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; 
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.exercises .card.breathing::before {
+  background-image: url("Music.jpj.jpg");
+}
+.exercises .card.music::before {
+  background-image: url("Song.jpj.jpg");
+}
+.exercises .card.journaling::before {
+  background-image: url("Journalism.jpg");
+}
+
+.counselor {
+  background: #eaf3fc;
+  padding: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fefefe;
+}
+.register form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.register input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.register button {
+  background: RGB(0, 77, 78);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.register button:hover {
+  background: RGB(0, 77, 78);
+}
+
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: RGB(0, 77, 78);
+  color: white;
+  margin-top: 20px;
+
+}

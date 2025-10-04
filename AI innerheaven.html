@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inner Heaven</title>
+  <link rel="stylesheet" href="Innerheaven.css" />
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="logo">🌿Inner Heaven</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#exercises">Exercises</a></li>
+      <li><a href="#counselor">Counselor</a></li>
+      <li><a href="#register" class="btn-register">Register</a></li>
+    </ul>
+  </nav>
+
+  
+  <header id="home">
+    <h1>Always Here, Always Listening</h1>
+    <p>Support for Students’ Mental Well-being</p>
+  
+    <img src="Banner.jpj.jpg" alt="Mental Health Support" class="banner" height="250" width="250">
+  </header>
+
+  
+  <main class="chat-section">
+    <h2>Chat With Your AI Companion</h2>
+    <p>How can I help you today? Are you feeling <b>sad, stressed, anxious, lonely, nervous, or tired?</b></p>
+    <div class="chat-container">
+      <div id="chat-box"></div>
+      <input type="text" id="user-input" placeholder="Type your feelings here..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </main>
+
+
+  <section class="features" id="features">
+    <h2>Why Choose Inner Heaven?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Motivational Support</h3>
+        <p>Get instant uplifting responses when you feel low.</p>
+      </div>
+      <div class="card">
+        <h3>Relaxation Exercises</h3>
+        <p>Guided breathing, music, and journaling activities.</p>
+      </div>
+      <div class="card">
+        <h3>Connect with Counselor</h3>
+        <p>Option to reach a real counselor anytime.</p>
+      </div>
+    </div>
+  </section>
+
+<section class="exercises" id="exercises">
+  <h2>Relaxation Exercises</h2>
+  <div class="cards">
+    <div class="card breathing">
+      <h3>Breathing Exercise</h3>
+      <button onclick="showExercise('breathing')">Start</button>
+    </div>
+    <div class="card music">
+      <h3>Soothing Music</h3>
+      <button onclick="showExercise('music')">Play</button>
+    </div>
+    <div class="card journaling">
+      <h3>Journaling</h3>
+      <button onclick="showExercise('journaling')">Write</button>
+    </div>
+  </div>
+</section>
+
+  <section class="counselor" id="counselor">
+    <h2>Need More Support?</h2>
+    <p>Connect with a counselor in real-time for professional help.</p>
+    <button onclick="connectCounselor()">Connect Now</button>
+  </section>
+
+  
+  <section class="register" id="register">
+    <h2>Register</h2>
+    <p>Sign up to get personalized support and updates 💙</p>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <button type="submit">Register Now</button>
+    </form>
+  </section>
+
+  
+  <footer>
+    <p>© 2025 Inner Heaven | Hackathon Project</p>
+  </footer>
+
+  <script src="inner.js"></script>
+</body>
+
